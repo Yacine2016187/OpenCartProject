@@ -62,7 +62,7 @@ return accSecValueList;
 	}
 	
 	public SearchResultPage doSerach(String ProductName) {
-		System.out.println("searching the product "+ProductName);
+		System.out.println("searching the product of "+ProductName);
 		eleUtil.doSendKeys(searchFile, ProductName);
 		eleUtil.doClick(searchBtn);
 		return new SearchResultPage(driver);
